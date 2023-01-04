@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    /* background-color: rgb(209, 209, 209); */
+
+}
+
+header {
+    background-color: lightskyblue;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    background-color: lightskyblue;
+    padding: 15px;
+    /* margin: 10px 0; */
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    margin: 3px;
+    padding: 10px;
+    /* border-bottom: 1px solid transparent; */
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    /* border-bottom: 1px solid whitesmoke; */
+    /* text-decoration: overline; */
+    color: whitesmoke;
+}
+
+.main-title {
+    text-align: center;
+    color: #333;
+}
+
+
+.user-msg {
+    color: white;
+    padding: 10px;
+    font-size: 1.4em;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: grey;
+}
+
+.user-msg button {
+    float: right;
+    border: 0;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.success {
+    background-color: rgb(41, 189, 73);
+}
+
+.danger {
+    background-color: rgb(216, 59, 59);
+}
+
+
+.bug-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.bug-preview {
+    background-color: #333;
+    color: whitesmoke;
+    border-radius: .2em;
+    margin: 5px;
+    text-align: center;
+    padding: 20px;
+}
+
+.bug-preview a {
+    color: lightskyblue;
+}
+
+.bug-preview a:hover {
+    color: whitesmoke;
+}
+
+.bug-preview span {
+    color: gold;
+}
+
+.bug-filter form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    padding: 20px;
+    color: rgb(237, 235, 233);
+}
+
+button {
+    border: none;
+    border-radius: 0.3rem;
+    margin: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(102, 102, 102);
+}
+
+h1 {
+    margin: 10px;
+    color: #333;
+}
+
+.profile-container {
+    padding: 20px;
+}
+
+.profile-container .profile-image-container img {
+    text-align: center;
+    width: 200px;
+}
+
+.login-form input {
+    border: none;
+    border-radius: 0.3rem;
+    margin: 5px;
+    padding: 5px;
+}
+
+.hidden-btn {
+    width: 50px;
+    opacity: 0;
+    transition: opacity .35s ease;
+}
+
+.bug-preview:hover .hidden-btn {
+    opacity: 1;
+}
